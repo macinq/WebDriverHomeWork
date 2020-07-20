@@ -10,6 +10,11 @@ public class Hook {
     System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\chromedriver.exe");
   }
 
+  @BeforeTest
+  public void sleep() throws InterruptedException {
+    Thread.sleep(3000);
+  }
+
   @AfterClass
   public void driverClose() {
     try {
